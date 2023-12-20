@@ -1,0 +1,54 @@
+section.privacy {
+    margin-top: 74px;
+}
+
+img {
+    vertical-align: middle;
+}
+
+section.privacy .aqupa-cool {
+    margin-top: 40px;
+    width: 550px;
+}
+
+section.privacy .subheader,
+section.information .subheader {
+    font-size: 16px;
+    font-weight: 400;
+    color: #115e66;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.information {
+    margin-top: 50px;
+    padding-top: 50px;
+    padding-bottom: 100px;
+    background-color: rgb(236, 236, 236);
+}
+
+section.information .header-information {
+    font-size: 16px;
+    font-weight: 600;
+    color: #39ACB4;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.information .informationlist {
+    padding-left: 30px;
+}
+
+section.confirmation .textbox {
+    background-color: #39ACB4;
+    padding: 20px;
+    border-radius: 30px;
+    margin-top: -30px;
+}
+
+section.confirmation .text {
+    font-size: 16px;
+    font-weight: 400;
+    color: white;
+    padding: 0px;
+}

@@ -1,0 +1,355 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+html {
+    scroll-behavior: smooth;
+
+}
+
+:root {
+    --main-color: #39ACB4;
+    --sec-color: #115e66;
+    --main-gradient: linear-gradient(180deg, #35A8B0 0%, #4FC5CD 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+.button a {
+    font-weight: 500;
+    font-size: medium;
+    padding: 15px 50px;
+    border-radius: 500px;
+    color: white;
+    background: var(--main, linear-gradient(180deg, #35A8B0 0%, #4FC5CD 100%));
+    border: 2px solid #39ACB4;
+}
+
+.button a:hover {
+    color: #39ACB4;
+    background: transparent;
+    border: 2px solid #39ACB4;
+}
+
+.header {
+    font-size: 40px;
+    font-weight: 600;
+    color: #115e66;
+    line-height: 75px;
+    font-family: 'Fredoka', cursive;
+}
+
+.subheader {
+    font-size: 16px;
+    font-weight: 400;
+    color: #115e66;
+    line-height: 25px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+    text-justify: auto;
+}
+
+.linebreak {
+    margin: 0 auto;
+    width: 50%;
+    height: 3px;
+    background-color: var(--main-color);
+    display: block;
+    border-radius: 10px;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    font-weight: 800;
+    color: #fff;
+}
+
+#navbarNav .nav-item a {
+    font-family: 'Poppins', sans-serif;
+    color: #565656;
+    font-weight: 500;
+}
+
+#navbarNav .nav-item a:hover {
+    color: #39ACB4;
+}
+
+#navbarNav li .activenav {
+    color: #39ACB4;
+    border-bottom: solid #39ACB4 3px;
+}
+
+#navbarNav li .activedropdown {
+    color: white;
+    background-color: var(--main-color);
+}
+
+#navbarNav li .activedropdown:hover {
+    color: white;
+    background-color: var(--main-color);
+}
+
+#navbarNav .fa-solid {
+    color: white;
+}
+
+#navbarNav .search-btn:hover .fa-solid {
+    color: var(--main-color);
+}
+
+nav {
+    background-color: transparent;
+    /* Warna latar belakang awal (sebelum animasi) */
+    box-shadow: none;
+    /* Hapus bayangan awal */
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    /* Animasi transisi 0.3 detik */
+}
+
+section.hero {
+    margin-top: 74px;
+}
+
+nav.navbg {
+    background-color: white;
+    /* Ganti warna latar belakang yang diinginkan */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    /* Tambahkan bayangan yang diinginkan */
+}
+
+nav .subscribe-btn a {
+    font-size: medium;
+    padding: 10px 40px;
+    border-radius: 500px;
+    color: white;
+    background: var(--main, linear-gradient(180deg, #35A8B0 0%, #4FC5CD 100%));
+    border: 2px solid #39ACB4;
+}
+
+nav .search-btn a {
+    font-size: 20px;
+    color: #565656;
+    background-color: rgb(221, 221, 221);
+    margin-right: 20px;
+    padding: 10px 15px;
+    border: solid transparent 2px;
+    border-radius: 50%;
+}
+
+section.hero .row {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+section.hero {
+    background-image: url('assets/image/waterstream.svg');
+    /* cover */
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+section.hero .header {
+    font-family: 'poppins', sans-serif;
+    font-size: 61px;
+    font-weight: 600;
+    color: #151515;
+    line-height: 65px;
+}
+
+section.hero .header .fw-bold {
+    color: #39ACB4;
+}
+
+section.hero .subheader {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    color: #151515;
+    line-height: 30px;
+    margin-top: 20px;
+}
+
+section.hero .button {
+    margin-top: 20px;
+}
+
+section.hero .button-sec a {
+    color: #39ACB4;
+    background: transparent;
+    padding: 13px 30px;
+    border: 2px solid #39ACB4;
+}
+
+section.hero .button-sec a:hover {
+    color: white;
+    background: var(--main, linear-gradient(180deg, #35A8B0 0%, #4FC5CD 100%));
+    border: 2px solid #39ACB4;
+}
+
+section.hero .button-sec a svg:hover {
+    fill: white;
+}
+
+.button-sec img:nth-child(2) {
+    display: none;
+}
+
+.button-sec:hover img:nth-child(1) {
+    display: none;
+}
+
+.button-sec:hover img:nth-child(2) {
+    display: inline;
+}
+
+.heroimg {
+    width: 460px;
+    margin-right: -50px;
+}
+
+.labelsection {
+    color: #39ACB4;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: initial;
+    background-color: white;
+}
+
+.labelsection:hover {
+    color: #39ACB4 !important;
+}
+
+section.aboutus {
+    background-color: #ffff;
+}
+
+section.aboutus .header,
+section.whatisstem .header,
+section.privacy .header,
+section.information .header {
+    font-size: 40px;
+    font-weight: 600;
+    color: #115e66;
+    line-height: 75px;
+    font-family: 'Fredoka', cursive;
+}
+
+section.aboutus .subheader {
+    font-size: 16px;
+    font-weight: 400;
+    color: #115e66;
+    line-height: 30px;
+    font-family: 'Poppins', sans-serif;
+}
+
+section.aboutus img {
+    width: 550px;
+}
+
+section.aboutus .row,
+section.whatisstem {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+section.whatisstem .faicon {
+    font-size: 30px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+section.whatisstem .card {
+    margin-top: 20px;
+    border-radius: 10%;
+    border: none;
+    padding: 30px 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+section.whatisstem .card:hover {
+    background-color: #49BEC6;
+    color: white;
+    transition: 0.2s ease-in;
+}
+
+section.whatisstem .card:hover .faicon {
+    color: black;
+    /* atau warna lain yang diinginkan untuk ikon */
+}
+
+/*** Newsletter ***/
+.newsletter {
+    background: url('assets/image/bg2.svg') center center no-repeat;
+    background-size: cover;
+}
+
+.newsletter .header {
+    color: white;
+    text-shadow: 3px 3px #115e66;
+    font-family: 'Fredoka', cursive;
+    font-weight: 600;
+}
+
+/*** Footer ***/
+section.footer ul li {
+    list-style-type: none;
+}
+
+section.footer ul li a {
+    color: #39ACB4;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+}
+
+section.footer .footerp1 {
+    padding-top: 120px;
+    padding-bottom: 80px;
+}
+
+section.footer .footerp2 {
+    color: white;
+    background: var(--main, linear-gradient(180deg, #319ca3 0%, #4FC5CD 100%));
+}
+
+section.footer .footerp2 p {
+    padding-top: 20px;
+}
+
+@media (min-width: 992px) {
+    .newsletter .container {
+        max-width: 100% !important;
+    }
+
+    .newsletter .newsletter-text {
+        padding-right: calc(((100% - 960px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1200px) {
+    .newsletter .newsletter-text {
+        padding-right: calc(((100% - 1140px) / 2) + .75rem);
+    }
+}
+
+@media (min-width: 1400px) {
+    .newsletter .newsletter-text {
+        padding-right: calc(((100% - 1320px) / 2) + .75rem);
+    }
+}
